@@ -1,0 +1,33 @@
+{
+  "name": "plagiarism-checker-copyleaks-listener",
+  "version": "1.0.0",
+  "description": "A node server to listen and return the results of the copyleaks scan back to the frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulOfili/plagiarism-checker-copyleaks-listener.git"
+  },
+  "keywords": [
+    "websockets",
+    "socker.io",
+    "event-listener",
+    "node"
+  ],
+  "author": "Paul Ofili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulOfili/plagiarism-checker-copyleaks-listener/issues"
+  },
+  "homepage": "https://github.com/PaulOfili/plagiarism-checker-copyleaks-listener#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^3.1.1"
+  }
+}
