@@ -19,7 +19,11 @@ const io = socketIo(server, {
       origin: "*",
       methods: ["GET", "POST"]
     }
-  });
+});
+
+app.get("/", () => {
+  res.send("Working properly")
+})
 
 app.post("/webhook/:status/:scanId", (req, res) => {
     const scanId = req.params.scanId
