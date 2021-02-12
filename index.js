@@ -21,7 +21,7 @@ const io = socketIo(server, {
     }
 });
 
-app.get("/", () => {
+app.get("/", (req, res) => {
   res.send("Healthy")
 })
 
