@@ -22,7 +22,7 @@ const io = socketIo(server, {
 });
 
 app.get("/", () => {
-  res.send("Working properly")
+  res.send("Healthy")
 })
 
 app.post("/webhook/:status/:scanId", (req, res) => {
